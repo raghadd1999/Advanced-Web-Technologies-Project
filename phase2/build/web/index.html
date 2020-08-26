@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>KSU</title>
+	<meta name="viewport" content="width=device-width, initial-scale = 1">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="web1.css" />
+	<script src="valid4.js"></script>
+</head>
+<body>
+
+	<header id="header">
+		<div id="logo">
+			<img src ="logo.png" alt ="logo" >
+			<h1><a href="index.html">Welcome to KSU</a></h1>
+		</div>
+		
+		<div class="welcome">
+			Welcome <a href="index.html">Sign Out</a>
+		</div>		
+		<nav id="nav">
+			<ul>
+				<li><a href="index.html">Homepage</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="page">
+	
+		<section style="text-align: center;">
+			<header class="major">
+				<h2>Add Course</h2>
+			</header>
+		</section>
+
+		<section>
+			<form name="myform" action="addCourse" method="POST" >
+                            <fieldset>
+                                    <legend>Enter course information</legend>
+                                    <label for="id" id="id">Course ID*:</label>
+                                    <input type="text" id="course_id" name="course_id">
+                                    <label for="inst_id" id="instid">Instructor ID*:</label>
+                                    <input type="text" id="inst_id" name="inst_id">
+                                    <label for="name" id="name">Course Name*:</label>
+                                    <input type="text" id="course_name" name="course_name">
+                                    <label for="field" id="field">Course Field*:</label>
+                                    <input type="text" id="course_field" name="course_field">
+                                    <label for="description" id="description">Course description:</label>
+                                    <textarea id="description" name="course_description" rows="6" cols="55" placeholder="description"></textarea>
+                                    <input class="button" id="log" type="button" onclick="f1()" value="Add">
+                            </fieldset>
+			</form>
+		</section>
+		
+	</div>
+	
+	<footer id="copyright">
+		<p>Copyrights KSU courses.</p>
+	</footer>
+</body>
+</html>
